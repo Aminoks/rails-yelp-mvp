@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-offset-sm-3 col-sm-6">
+      <h1>Restaurants</h1>
+      <ul>
+        <% @reviews.each do |r| %>
+        <li>
+          <%= r.content  %>-- <%= r.rating %>
+        </li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
